@@ -4,10 +4,13 @@
 class MyClass {
 public:
   int x;
+  bool b1 {true};
 
-  MyClass() { std::cout << "default" << x << '\n'; }
+  MyClass(): x(100) {
+    std::cout << "default" << x << '\n';
+  }
 
-  MyClass(int value) {
+  explicit MyClass(const int value) {
     x = value;
     std::cout << "parameterised" << x << '\n';
   }
@@ -20,6 +23,6 @@ public:
 
 int main() {
   MyClass obj1;
-  MyClass obj2(100);
-  MyClass obj3 = obj2;
+  const MyClass obj2(100);
+  MyClass obj3 = obj2 ;
 }
