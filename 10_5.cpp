@@ -1,3 +1,4 @@
+#include <AGL/agl.h>
 #include <iostream>
 #include <memory>
 
@@ -13,7 +14,7 @@ private:
 };
 
 int main() {
-    
+
   std::unique_ptr<Dog> myDog(new Dog("tex"));
   myDog->bark();
 
