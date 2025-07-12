@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_executable(progress
         "main.cpp"
-        "add(july9).cpp")
+)
