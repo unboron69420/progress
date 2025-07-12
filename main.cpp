@@ -1,9 +1,9 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
 
-using namespace std;
-
-int add(int a, int b);
 int main() {
-    std::cout << add(1, 2) << std::endl;
+    std::cout << "once chance "<< std::endl;
+
+    return 0;
 }
 
